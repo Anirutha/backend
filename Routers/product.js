@@ -7,6 +7,7 @@ router.get("/all", async (req, res) => {
   try {
      const products = await getAllProducts(req);
     if (products.length <= 0) {
+      console.log(products)
       res.status(400).json({ data: "User Not found" });
       return;
     }
