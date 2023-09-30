@@ -21,7 +21,7 @@ app.use((req, res, next) => {
     next();
   });
 
-  app.use("/products", isAuthenticated, productsRouter)
+  app.use("/products", productsRouter)
 app.use("/users",userRouter)
 
 //starting ther server
